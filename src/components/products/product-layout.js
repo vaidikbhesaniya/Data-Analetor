@@ -23,7 +23,7 @@ export default function ProductLayout({ children }) {
   console.log(formData);
 
   async function handleAddProduct() {
-    const res = await fetch("/app/api/product/add-product", {
+    const res = await fetch("/api/product/add-product", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

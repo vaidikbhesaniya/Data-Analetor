@@ -20,7 +20,7 @@ export default function VisitorsLayout({ children }) {
   const router = useRouter();
 
   async function handleAddVisitors() {
-    const res = await fetch("/app/api/visitors/add-visitor", {
+    const res = await fetch("/api/visitors/add-visitor", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

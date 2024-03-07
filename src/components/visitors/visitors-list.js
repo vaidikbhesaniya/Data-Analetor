@@ -6,7 +6,7 @@ import {
 import Table from "../Table";
 
 async function extractAllVisitors() {
-    const res = await fetch("/app/api/visitors/all-visitors", {
+    const res = await fetch("/api/visitors/all-visitors", {
         method: "GET",
         cache: "no-store",
     });
