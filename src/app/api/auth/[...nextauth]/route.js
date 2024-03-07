@@ -19,7 +19,7 @@ const authOptions = {
           const isUserExists = await User.findOne({ email });
 
           if (!isUserExists) {
-            const res = await fetch("/api/user", {
+            const res = await fetch("/app/api/user", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

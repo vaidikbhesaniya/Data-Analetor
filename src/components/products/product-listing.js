@@ -2,7 +2,7 @@ import { monthsMapper, productTableHeaders } from "@/utils/config";
 import Table from "../Table";
 
 async function extractAllProducts() {
-  const res = await fetch("/api/product/all-products", {
+  const res = await fetch("/app/api/product/all-products", {
     method: "GET",
     cache: "no-store",
   });
